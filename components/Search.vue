@@ -54,7 +54,6 @@ export default {
       placeholder: undefined
     }
   },
-  props: [ 'page' ],
   mounted () {
     this.placeholder = this.$themeConfig.search.placeholder || ''
     document.addEventListener('keydown', this.onHotkey)

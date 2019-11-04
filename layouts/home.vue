@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Navbar :page="page" />
+		<Navbar />
 		<main class="mt-16">
 			<header class="pb-40 pt-32">
 				<div class="container mx-auto px-4">
@@ -110,13 +110,8 @@
 	import Navbar from '../components/Navbar';
 	import Footer from '../components/Footer';
 
-	export const data = {
-		injectAllPosts: true
-	}
-
 	export default {
 		components: { Navbar, Footer },
-		props: ['page'],
 	}
 </script>
 

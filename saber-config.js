@@ -7,7 +7,7 @@ module.exports = {
   	'saber-plugin-query-posts',
     'saber-plugin-prismjs',
     'saber-plugin-search',
-    // 'saber-plugin-git-modification-time',
+    'saber-plugin-git-modification-time',
   ],
   markdown: {
     headings: {
@@ -112,5 +112,6 @@ module.exports = {
   },
   siteConfig: {
   	repo: 'https://github.com/the94air/empathy',
+    docsRepo: 'https://github.com/the94air/empathy-docs/blob/master/pages/_posts/docs'
   }
 }

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Navbar :page="page" />
+		<Navbar />
 		<main class="container mx-auto px-4">
 			<div class="flex flex-wrap mt-32">
 				<Sidebar />
@@ -9,9 +9,13 @@
 						<div class="markdown-body mb-16">
 							<slot name="default" />
 						</div>
-						<div class="text-gray-700">
-							<p class="font-semibold">Last updated at:</p>
-							<!-- <p>{{ page.updatedAt }}</p> -->
+						<div class="flex flex-wrap text-gray-700">
+							<div class="w-full md:w-1/2">
+								<p class="font-semibold">Last updated at: {{ new Date(page.updatedAt).toLocaleDateString("en-US") }}</p>
+							</div>
+							<div class="w-full md:w-1/2 md:text-right">
+								<p><a :href="$siteConfig.docsRepo">Edit on github</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -26,13 +30,9 @@
 	import Footer from '../components/Footer';
 	import Sidebar from '../components/Sidebar';
 
-	export const data = {
-		injectAllPosts: true
-	}
-
 	export default {
+		props: { page: Object },
 		components: { Navbar, Footer, Sidebar },
-		props: ['page'],
 	}
 </script>
 
