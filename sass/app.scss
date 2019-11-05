@@ -8,6 +8,7 @@
 @import '../node_modules/prismjs/themes/prism-tomorrow.css';
 @import '../node_modules/saber-highlight-css/default.css';
 
+
 code:not([class*='language-']) {
 	@apply bg-orange-200 text-orange-500 rounded px-1;
 	padding-top: .15rem;
