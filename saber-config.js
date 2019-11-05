@@ -112,6 +112,6 @@ module.exports = {
   },
   siteConfig: {
   	repo: 'https://github.com/the94air/empathy',
-    docsRepo: 'https://github.com/the94air/empathy-docs/blob/master/pages/_posts/docs'
+    docsRepo: 'https://github.com/the94air/empathy-docs/blob/master/pages/_posts/'
   }
 }

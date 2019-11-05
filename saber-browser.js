@@ -24,7 +24,17 @@ library.add(faGithub, faTwitter, faSearch, faShippingFast, faFeather, faCubes, f
 
 Vue.component('Fa', FontAwesomeIcon);
 
-export default ({ router }) => {
+export default ({ router, setHead }) => {
+	setHead({
+		title: 'Empathy — Build A Nice Looking Admin Panel In A Blink.',
+		meta: [
+			{
+				name: 'description',
+				content: 'A Lightweight Admin Panel Components With Tailwindcss and Vue.'
+			}
+		],
+	})
+
 	router.addRoutes([
 		{ path: '/docs', redirect: '/docs/1.0' },
 		{ path: '/docs/1.0', redirect: '/docs/1.0/what-is-empathy' }

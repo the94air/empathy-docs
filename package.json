@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "saber",
-    "build": "saber build && mv ~/Sites/empathy-docs/public ~/Sites/empathy-docs/docs"
+    "build": "rm -rf ~/Sites/empathy-docs/docs && saber build && mv ~/Sites/empathy-docs/public ~/Sites/empathy-docs/docs"
   },
   "keywords": [],
   "author": "",

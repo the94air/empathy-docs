@@ -14,7 +14,7 @@
 								<p class="font-semibold">Last updated at: {{ new Date(page.updatedAt).toLocaleDateString("en-US") }}</p>
 							</div>
 							<div class="w-full md:w-1/2 md:text-right">
-								<p><a :href="$siteConfig.docsRepo">Edit on github</a></p>
+								<p class="font-semibold"><a :href="$siteConfig.docsRepo + page.slug + '.md'">Edit this page</a></p>
 							</div>
 						</div>
 					</div>
@@ -31,6 +31,11 @@
 	import Sidebar from '../components/Sidebar';
 
 	export default {
+		head() {
+			return {
+				title: `Empathy — ${this.page.title}`
+			}
+		},
 		props: { page: Object },
 		components: { Navbar, Footer, Sidebar },
 	}
