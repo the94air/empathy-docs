@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
     "fuse.js": "^3.4.5",
     "github-markdown-css": "^3.0.1",
     "prismjs": "^1.17.1",
