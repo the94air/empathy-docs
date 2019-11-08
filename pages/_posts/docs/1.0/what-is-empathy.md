@@ -1,7 +1,6 @@
 ---
 title: What is Empathy
 layout: page
-injectAllPosts: true
 ---
 
 # What is Empathy

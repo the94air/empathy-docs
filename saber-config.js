@@ -66,12 +66,12 @@ module.exports = {
             path: '/docs/1.0/navbar-component'
           },
           {
-            title: 'Footer component',
-            path: '/docs/1.0/footer-component'
-          },
-          {
             title: 'Panel component',
             path: '/docs/1.0/panel-component'
+          },
+          {
+            title: 'Footer component',
+            path: '/docs/1.0/footer-component'
           },
         ]
       },

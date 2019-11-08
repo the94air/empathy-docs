@@ -4,7 +4,7 @@ layout: page
 ---
 
 # Making main sections
-1. We need to make 3 components for the main sections of the panel. The main component will contain the sidebar and the content section. We will get back to it later:
+1. We need to make 3 components for the main sections of the panel. The main component will contain the sidebar and the content section. We will get back to it later. let's add this to `App.vue`:
 ```javascript
 <template>
     <div class="h-full">

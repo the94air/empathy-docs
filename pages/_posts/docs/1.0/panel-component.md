@@ -10,7 +10,7 @@ layout: page
     <div class="container mx-auto px-4">
         <Slideout menu="#sidebar" panel="#content">
             <div class="container">
-                <div class="flex -mx-4 md:-mx-2">
+                <div class="flex -mx-4 md:-mx-3">
                     <Sidebar />
                     <Content />
                 </div>
@@ -30,7 +30,7 @@ layout: page
 </script>
 ```
 
-2. To make the sidebar we first need to install Fontawesome in our `app.js`. To learn more visit the [docs](https://github.com/FortAwesome/vue-fontawesome):
+2. To make the sidebar we first need to setup Fontawesome in our `app.js`. To learn more visit the [docs](https://github.com/FortAwesome/vue-fontawesome):
 ```javascript
 import Vue from 'vue';
 import App from './App';
@@ -145,16 +145,14 @@ const app = new Vue({
 </script>
 ```
 
-4. Then we add the content component:
+4. Then we add the content component. You can add use `vue-router` here to change the page content:
 ```javascript
 <template>
     <div class="w-full px-4 mt-32 sm:mb-16 md:px-2 md:w-4/6 lg:w-4/5 lg:px-3" id="content">
-        <h1 class="text-3xl">Dashboard</h1>
-        <div class="bg-white shadow-lg rounded-lg p-6 md:p-8">
+        <h1 class="text-3xl mb-5">Dashboard</h1>
+        <div class="bg-white shadow-md rounded-lg p-6 md:p-8 mb-10">
             <p class="h-48">Content here</p>
         </div>
     </div>
 </template>
 ```
-
-And now we have a complete lightweight responsive admin panel.

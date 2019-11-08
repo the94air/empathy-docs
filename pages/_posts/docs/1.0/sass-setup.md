@@ -4,39 +4,38 @@ layout: page
 ---
 
 # SASS setup
-1. The first step is to import the empathy SASS files and make a new file for base styling. If you want to modify the default styles you can copy the file to your SASS:
-
-2. Then we add a new file for base styling:
+1. The first step is to import the empathy SASS files and make a new file for base styling. We had to do so because there are some limitations in CSS when it comes to inline styling pseudo-elements and active classes...etc. If you want to customize these styles you have to import them or [copy](https://github.com/the94air/empathy/blob/master/src/sass/empathy.scss) them to your project. Empathy will never get in the way!
 ```scss
 @tailwind base;
 
 @tailwind components;
 
-@import '~empathy/src/sass/empathy';
-@import 'base';
+// https://github.com/the94air/empathy/blob/master/src/sass/empathy.scss
+@import '~@codolog/empathy/src/sass/empathy';
+
+@import './base';
 
 @tailwind utilities;
 ```
-3. The Base file should content:
+
+3. `base.scss` file should contain:
 
 ```scss
 html {
-    color: theme('colors.gray.800');
+    @apply text-gray-800;
 }
 
 body {
-    background: theme('colors.gray.200');
-    width: 100%;
-    height: 100%;
+    @apply bg-gray-100 w-full h-full;
 }
 
 ::selection {
-    background: theme('colors.gray.400');
+    @apply bg-gray-400;
     text-shadow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold mb-2;
+    @apply mb-2;
 }
 
 h1, .h1 {
@@ -64,7 +63,7 @@ h6, .h6 {
 }
 
 a {
-    color: theme('colors.blue.500');
+    @apply text-blue-500;
     text-decoration: underline;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -72,7 +71,7 @@ a {
 }
 
 a:hover {
-    color: theme('colors.blue.600');
+    @apply text-blue-600;
     text-decoration: none;
 }
 
@@ -91,7 +90,6 @@ a:not([href]):not([tabindex]):focus {
 }
 
 hr {
-    @apply my-4;
-    border-color: theme('colors.gray.300');
+    @apply my-4 border-gray-300;
 }
 ```

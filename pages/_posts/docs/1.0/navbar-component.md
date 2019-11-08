@@ -7,7 +7,7 @@ layout: page
 1. To make a responsive navbar you can use the next component:
 ```javascript
 <template>
-    <nav class="fixed inset-x-0 top-0 bg-white shadow">
+    <nav class="fixed inset-x-0 top-0 z-40 bg-white shadow">
         <div class="container px-4 mx-auto">
             <div class="flex justify-between items-center flex-wrap">
                 <div>
@@ -26,9 +26,6 @@ layout: page
                     <ul class="flex flex-col md:flex-row">
                         <li class="relative py-0 md:py-5 mr-0 md:mr-5">
                             <a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline text-gray-700 hover:text-gray-600 select">Home</a>
-                        </li>
-                        <li class="relative py-0 md:py-5 mr-0 md:mr-5">
-                            <a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline text-gray-700 hover:text-gray-600">Sign In</a>
                         </li>
                         <li class="relative py-0 md:py-5 mr-0 md:mr-5">
                             <a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline text-gray-700 hover:text-gray-600">Messages</a>
@@ -107,3 +104,5 @@ layout: page
     }
 </style>
 ```
+
+2. You can also copy [empathy logo](https://github.com/the94air/empathy/blob/master/src/images/empathy-gray.svg) and the [avatar](https://github.com/the94air/empathy/blob/master/src/images/avatar.jpeg) for the navbar images to work.

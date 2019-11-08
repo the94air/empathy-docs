@@ -25,4 +25,6 @@ layout: page
 </script>
 ```
 
-2. The footer will not show up because of the fixed navbar. You can add a `margin-bottom` the body element to make it visible but we will add it later.
+2. The footer might not show if you didn't add the panel compoent because of the fixed navbar. You can add a `margin-bottom` the body element to make it visible.
+
+3. And now we have a complete lightweight responsive admin panel.

@@ -4,7 +4,7 @@ layout: page
 ---
 
 # Fonts setup
-1. To the fonts we will use webfont loader to get fonts from google in our case. You can also use `webfontloader` to load local fonts. Read the [docs](https://github.com/typekit/webfontloader) to learn more.
+1. For the fonts, we will use `webfontloader` to get fonts from google fonts in our case. You can also use `webfontloader` to load local fonts or online hosted fonts. Read the [docs](https://github.com/typekit/webfontloader) to learn more.
 ```javascript
 import Vue from 'vue';
 import App from './App';
@@ -67,15 +67,14 @@ module.exports = {
 3. Let's add the font to our `base` SASS file:
 ```scss
 html {
-    @apply font-sans;
-    color: theme('colors.gray.800');
+    @apply font-sans text-gray-800;
 }
 
-<!-- ... -->
+//...
 
 h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-semibold mb-2;
 }
 
-<!-- ... -->
+//...
 ```

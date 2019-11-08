@@ -4,7 +4,7 @@ layout: page
 ---
 
 # Vue setup
-1. You will need to add vue root mount element to your html markup:
+1. Next, you will need to add Vue root mount element to your HTML markup:
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,7 @@ layout: page
 </body>
 </html>
 ```
-2. Then, we need to configure vuejs in our JavaScript to mount the element:
+2. Then, we need to configure Vue in our JavaScript to mount the element:
 ```javascript
 import Vue from 'vue';
 import App from './App';
@@ -34,7 +34,7 @@ const app = new Vue({
     render: h => h(App)
 });
 ```
-in your `App.vue` file:
+3. in your `App.vue` file:
 ```javascript
 <template>
     <div class="h-full">
